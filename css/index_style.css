@@ -145,6 +145,21 @@ footer {
   z-index: 1; /* showcase를 nav 아래 레벨로 설정 */
 }
 
+@media screen and (max-width: 550px) {
+  #showcase {
+    width: 95%;
+    height: 100%;
+    background: url('../img/sky.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: black;
+    opacity: 80%;
+    position: relative;
+    z-index: 1; /* showcase를 nav 아래 레벨로 설정 */
+  }
+}
+
 #showcase h1 {
   margin-top: 80px;
   font-size: 55px;
