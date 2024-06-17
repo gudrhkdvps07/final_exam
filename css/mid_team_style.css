@@ -101,8 +101,12 @@ footer {
   text-align: center;
 }
 
-.bm a {
-  color: rgb(21, 79, 224);
+.bm i {
+  color: #3498db;
+}
+
+.bm i:hover {
+  color: #db8d34;
 }
 
 @media screen and (max-width: 810px) {
@@ -192,8 +196,8 @@ footer {
   animation: fadeIn 1s ease-in 1 forwards;
 }
 
+/* 팀원 소개 */
 .member_container {
-  background-color: rgb(233, 233, 233);
   border-radius: 30px;
   padding: 20px;
   margin: 20px;
@@ -223,7 +227,7 @@ tr {
 }
 
 tr:nth-child(even) {
-  background-color: #dddddd;
+  background-color: #b1b1b1;
 }
 
 .teamtable h2 {
@@ -244,7 +248,7 @@ tr:nth-child(even) {
 
 .ago:hover {
   font-weight: bold;
-  color: rgb(109, 0, 171);
+  color: #8234db;
 }
 
 .homego {
@@ -254,5 +258,5 @@ tr:nth-child(even) {
 
 .homego:hover {
   font-weight: bold;
-  color: #0048c5;
+  color: #3498db;
 }

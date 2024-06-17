@@ -111,6 +111,7 @@ footer.dark-mode {
     right: 20px;
     background-color: #ffffff;
     color: rgb(43, 43, 43);
+    border-radius: 10px;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
@@ -158,14 +159,16 @@ footer.dark-mode {
 
 .bm {
   margin-top: 100px;
-  margin-right: 20px;
-  margin-left: 20px;
   margin-bottom: 100px;
   text-align: center;
 }
 
 .bm i {
-  color: rgb(0, 94, 255);
+  color: #3498db;
+}
+
+.bm i:hover {
+  color: #db8d34;
 }
 
 .icon {
@@ -228,7 +231,7 @@ tr:nth-child(even) {
 
 .ago:hover {
   font-weight: bold;
-  color: rgb(162, 0, 255);
+  color: #8234db;
 }
 
 .homego {
@@ -238,5 +241,5 @@ tr:nth-child(even) {
 
 .homego:hover {
   font-weight: bold;
-  color: #0048c5;
+  color: #3498db;
 }
