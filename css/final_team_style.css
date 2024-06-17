@@ -1,0 +1,242 @@
+@font-face {
+  font-family: 'WavvePADO-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/WavvePADO-Regular.woff2')
+    format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: 'WavvePADO-Regular';
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode {
+  background-color: rgb(45, 45, 45);
+  color: white;
+}
+
+header {
+  background-color: #ffffff;
+  color: rgb(43, 43, 43);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header.dark-mode {
+  background-color: rgb(121, 121, 121);
+  color: white;
+}
+
+header h1 {
+  margin-left: 20px;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+#menu-toggle i {
+  font-size: 25px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+header .highlight,
+header .current a,
+footer .highlight {
+  /*헤더 밑의 하이라이트와 커런트 모두에게적용한다는 뜻*/
+  color: #0048c5;
+}
+
+nav ul li a {
+  color: rgb(43, 43, 43);
+  font-size: 18px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: gray;
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  padding: 10px;
+  margin-top: 20px;
+  color: rgb(43, 43, 43);
+  background-color: #ffffff;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+footer.dark-mode {
+  background-color: rgb(121, 121, 121);
+  color: white;
+}
+
+@media screen and (max-width: 810px) {
+  #menu-toggle {
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    background-color: #ffffff;
+    color: rgb(43, 43, 43);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  nav {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 90px;
+    width: 100%;
+    background-color: #ffffff;
+    flex-direction: column;
+  }
+
+  nav.flex-active {
+    display: flex;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 0;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+  }
+
+  .bm {
+    margin-top: 100px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 100px;
+    text-align: center;
+  }
+}
+
+/* 여기서부터 내용 */
+
+.bm {
+  margin-top: 100px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.bm i {
+  color: rgb(0, 94, 255);
+}
+
+.icon {
+  position: fixed;
+  top: 858px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* 팀원 소개 */
+.member_container {
+  border-radius: 30px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.member_container h1 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+/* table */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 17px;
+}
+
+tr {
+  padding: 50px;
+}
+
+tr:nth-child(even) {
+  background-color: #b1b1b1;
+}
+
+.teamtable h2 {
+  text-align: center;
+}
+
+.go {
+  background-color: #ffffff;
+  padding: 7px;
+  border-radius: 5px;
+  border-width: 1px;
+}
+
+.ago {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+.ago:hover {
+  font-weight: bold;
+  color: rgb(162, 0, 255);
+}
+
+.homego {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+.homego:hover {
+  font-weight: bold;
+  color: #0048c5;
+}

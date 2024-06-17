@@ -1,0 +1,240 @@
+@font-face {
+  font-family: 'WavvePADO-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/WavvePADO-Regular.woff2')
+    format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: 'WavvePADO-Regular';
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+header {
+  background-color: #ffffff;
+  color: rgb(43, 43, 43);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 10; /* header와 nav를 최상위 레벨로 설정 */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  margin-left: 20px;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+#menu-toggle i {
+  font-size: 25px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 10; /* header와 nav를 최상위 레벨로 설정 */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+header .highlight,
+header .current a,
+footer .highlight {
+  color: #0048c5;
+}
+
+nav ul li a {
+  color: rgb(43, 43, 43);
+  font-size: 18px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: gray;
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  padding: 10px;
+  margin-top: 20px;
+  color: rgb(43, 43, 43);
+  background-color: #ffffff;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 810px) {
+  #menu-toggle {
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    background-color: #ffffff;
+    color: rgb(43, 43, 43);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  nav {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 90px;
+    width: 100%;
+    background-color: #ffffff;
+    flex-direction: column;
+    z-index: 10; /* nav를 최상위 레벨로 설정 */
+  }
+
+  nav.flex-active {
+    display: flex;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 0;
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+  }
+}
+
+/* Showcase */
+#showcase {
+  width: 100%;
+  height: 100%;
+  background: url('../img/sky.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: black;
+  opacity: 80%;
+  position: relative;
+  z-index: 1; /* showcase를 nav 아래 레벨로 설정 */
+}
+
+#showcase h1 {
+  margin-top: 80px;
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+#showcase p {
+  font-size: 20px;
+  margin-bottom: 75px;
+}
+
+/* 애니메이션 */
+.animation {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-top: 100%;
+    margin-bottom: 120%;
+  }
+
+  to {
+    margin-top: 0%;
+    margin-bottom: 0%;
+  }
+}
+
+/* 여기서부터 내용 */
+section {
+  padding: 20px;
+}
+
+section h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+#profile {
+  text-align: center;
+  padding: 60px 0;
+  background: #f4f4f4;
+}
+
+#profile img {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  object-fit: cover; /* 이미지 변형방지 */
+}
+
+#profile h1 {
+  margin-top: 20px;
+  margin-bottom: 25px;
+  font-size: 40px;
+}
+
+p {
+  text-align: center;
+  font-size: 18px;
+}
+
+#do {
+  background-color: #e9ecef;
+}
+
+#do a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+#do a:hover {
+  color: #e87800;
+}
+
+#contact {
+  margin-bottom: 20px;
+}
+
+#contact a {
+  display: block;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+#contact a:hover {
+  color: #6300b4;
+}

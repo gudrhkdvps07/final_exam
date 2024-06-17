@@ -1,0 +1,215 @@
+@font-face {
+  font-family: 'WavvePADO-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/WavvePADO-Regular.woff2')
+    format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: 'WavvePADO-Regular';
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+header {
+  background-color: #ffffff;
+  color: rgb(43, 43, 43);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  margin-left: 20px;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+#menu-toggle i {
+  font-size: 25px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+header .highlight,
+header .current a,
+footer .highlight {
+  /*헤더 밑의 하이라이트와 커런트 모두에게적용한다는 뜻*/
+  color: #0048c5;
+}
+
+nav ul li a {
+  color: rgb(43, 43, 43);
+  font-size: 18px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: gray;
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  padding: 10px;
+  margin-top: 20px;
+  color: rgb(43, 43, 43);
+  background-color: #ffffff;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 810px) {
+  #menu-toggle {
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    background-color: #ffffff;
+    color: rgb(43, 43, 43);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  nav {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 90px;
+    width: 100%;
+    background-color: #ffffff;
+    flex-direction: column;
+  }
+
+  nav.flex-active {
+    display: flex;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 0;
+    box-shadow: 5px 5px 5px rgb(207, 207, 207);
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+  }
+}
+
+/* 여기서부터 내용 */
+
+#projects {
+  margin-top: 15px;
+  text-align: center;
+  background-color: #fff;
+  padding: 5%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#projects h1 {
+  font-size: 35px;
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+
+#projectList {
+  margin-top: 10px;
+}
+
+.project-item {
+  padding: 10%;
+  text-align: center;
+  margin-bottom: 60px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  background-color: #fafafa;
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-item h3 {
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+
+.project-item p {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.project-item a {
+  font-size: 20px;
+  color: #3498db;
+  text-decoration: none;
+  margin: 20px;
+  display: inline-block;
+}
+
+.project-item a:hover {
+  text-decoration: underline;
+}
+
+.project-image {
+  margin: auto;
+  width: 95%;
+  height: auto;
+}
+
+@media screen and (max-width: 810px) {
+  .project-item {
+    width: 70%;
+  }
+
+  .project-item h3 {
+    font-size: 22px;
+    padding-bottom: 10px;
+  }
+
+  .project-item p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+
+  .project-item a {
+    font-size: 16px;
+    color: #3498db;
+    text-decoration: none;
+    margin: 20px;
+    display: inline-block;
+  }
+}
