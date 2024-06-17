@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
       name: 'My Portfolio',
       description:
         '중부대 웹프로그래밍 중간고사 과제입니다. HTML과 순수 CSS로만 만든 웹사이트 입니다.',
-      link: 'https://midterm-jbu-yun.vercel.app/',
+      link: 'https://midterm-exam-jbu-yun.vercel.app/',
       img: './img/myportfolio.png',
     },
     {
