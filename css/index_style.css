@@ -147,12 +147,8 @@ footer {
 
 @media screen and (max-width: 550px) {
   #showcase {
-    width: 95%;
+    width: 94%;
     height: 100%;
-    background: url('../img/sky.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align: center;
   }
 }
 
