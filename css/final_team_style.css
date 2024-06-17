@@ -173,8 +173,8 @@ footer.dark-mode {
 
 .icon {
   position: fixed;
-  top: 858px;
-  right: 20px;
+  top: 140px;
+  left: 30px;
   font-size: 30px;
   cursor: pointer;
 }
