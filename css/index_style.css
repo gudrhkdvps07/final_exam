@@ -150,13 +150,9 @@ footer {
     width: 95%;
     height: 100%;
     background: url('../img/sky.jpeg');
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     text-align: center;
-    color: black;
-    opacity: 80%;
-    position: relative;
-    z-index: 1; /* showcase를 nav 아래 레벨로 설정 */
   }
 }
 
