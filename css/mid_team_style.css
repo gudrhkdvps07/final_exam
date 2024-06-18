@@ -14,6 +14,12 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode {
+  background-color: rgb(45, 45, 45);
+  color: white;
 }
 
 header {
@@ -24,14 +30,22 @@ header {
   justify-content: space-between;
   align-items: center;
   box-shadow: 5px 5px 5px rgb(207, 207, 207);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header.dark-mode {
+  background-color: rgb(121, 121, 121);
+  color: white;
 }
 
 header h1 {
   margin-left: 20px;
+  color: black;
 }
 
 #menu-toggle {
   display: none;
+  border-radius: 10px;
 }
 
 #menu-toggle i {
@@ -80,10 +94,8 @@ main {
   /* border: #fff solid 5px; */
   background-color: #fff;
   margin-bottom: 100px;
-}
-
-img {
-  width: 70%;
+  width: 55%;
+  margin: 0 auto;
 }
 
 footer {
@@ -93,6 +105,12 @@ footer {
   background-color: #ffffff;
   text-align: center;
   box-shadow: -5px -5px 3px rgb(207, 207, 207);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+footer.dark-mode {
+  background-color: rgb(121, 121, 121);
+  color: white;
 }
 
 .bm {
@@ -107,6 +125,19 @@ footer {
 
 .bm i:hover {
   color: #db8d34;
+}
+
+.icon {
+  position: fixed;
+  top: 140px;
+  left: 30px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+img {
+  width: 70%;
+  background-color: black;
 }
 
 @media screen and (max-width: 810px) {
@@ -151,8 +182,13 @@ footer {
     margin-bottom: 10px;
   }
 
+  .container {
+    /* border: #fff solid 5px; */
+    width: 90%;
+  }
+
   img {
-    width: 100%;
+    width: 90%;
   }
 
   .bm {
@@ -168,6 +204,8 @@ footer {
   /* border: #fff solid 5px; */
   background-color: #ffffff;
   margin-bottom: 100px;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .imgs {
@@ -175,7 +213,7 @@ footer {
   margin-right: 10px;
   align-items: center;
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   grid-gap: 3px;
 }
 
