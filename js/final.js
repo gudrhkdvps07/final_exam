@@ -9,21 +9,21 @@ document.addEventListener('DOMContentLoaded', () => {
     {
       name: '중국집 키오스크',
       description:
-        'Java script와 부트스트랩으로 만든 중국집 키오스크 주문 메뉴판입니다. ',
+        'javascript와 부트스트랩으로 만든 중국집 키오스크 주문 메뉴판입니다. ',
       link: 'https://kiosk-webprogramming-jbu.vercel.app/',
       img: './img/kiosk.png',
     },
     {
       name: '탁구 경기 스코어보드',
       description:
-        '웹프로그래밍 시간에 만든 Java script와 부트스트랩을 이용한 탁구 경기 스코어보드입니다.',
+        '웹프로그래밍 시간에 만든 javascript와 부트스트랩을 이용한 탁구 경기 스코어보드입니다.',
       link: 'https://pingpong-poject-board.vercel.app/',
       img: './img/pingpong.png',
     },
     {
       name: 'Book List Web',
       description:
-        '중부대 웹 프로그래밍 시간애 javascript를 통해 만든 책 정보 저장 사이트 입니다.',
+        '중부대 웹 프로그래밍 시간에 javascript를 통해 만든 책 정보 저장 사이트 입니다.',
       link: 'https://book-list-web-helppy.vercel.app/',
       img: './img/booklist.png',
     },
