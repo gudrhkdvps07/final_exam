@@ -235,7 +235,8 @@ tr:nth-child(even) {
 }
 
 #projectList {
-  margin-top: 10px;
+  margin: 0 auto;
+  width: 60%;
 }
 
 .project-item {
@@ -246,7 +247,7 @@ tr:nth-child(even) {
   border-radius: 15px;
   background-color: #fafafa;
   display: block;
-  width: 50%;
+  width: 65%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -281,11 +282,17 @@ tr:nth-child(even) {
   border-radius: 20px;
 }
 
-@media screen and (max-width: 810px) {
-  .project-item {
-    width: 70%;
+@media screen and (max-width: 900px) {
+  #projectList {
+    width: 90%;
   }
 
+  .project-item {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 810px) {
   .project-item h3 {
     font-size: 22px;
     padding-bottom: 10px;
