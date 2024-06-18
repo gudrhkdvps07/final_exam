@@ -277,7 +277,7 @@ tr:nth-child(even) {
   margin: auto;
   width: 95%;
   height: auto;
-  border: rgb(167, 167, 167) 1px solid;
+  border: #dbdbdb 1px solid;
   border-radius: 20px;
 }
 

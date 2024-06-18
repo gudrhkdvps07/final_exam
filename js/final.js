@@ -28,11 +28,18 @@ document.addEventListener('DOMContentLoaded', () => {
       img: './img/booklist.png',
     },
     {
-      name: 'Tailwind Web',
+      name: 'Next.js Web',
       description:
         '중부대 웹 프로그래밍 시간에 Next JS와 Tailwind CSS를 이용해 만든 웹사이트 입니다.',
       link: 'https://nextjs-blog-jbuyjp.vercel.app/',
       img: './img/nextjs.png',
+    },
+    {
+      name: 'Next.js  Blog',
+      description:
+        '중부대 웹 프로그래밍 시간에 Next JS와 Tailwind CSS를 이용해 만든 블로그 입니다.',
+      link: 'https://next-blog-jbu-yun-2.vercel.app/',
+      img: './img/nextjs_blog.png',
     },
   ]
 
